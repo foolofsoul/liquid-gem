@@ -1,0 +1,299 @@
+* { box-sizing: border-box; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Josefin Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #3e3e3e;
+  background-image: url(../img/bg.jpg);
+}
+
+a { text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/****************   LOGO AND NAVIGATION   ****************/
+#navigation {
+  height: 100px;
+  border-bottom: 1px solid  #6e6e6e;
+}
+
+.logo { 
+  float: left;
+  color: #3e3e3e;
+}
+
+.logo,
+.main-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-diamond {
+  display: inline-block;
+  color: #EF96A8;
+}
+
+.logo-name {
+  display: inline-block;
+  margin: 0;
+  font-family: "Kaushan Script", fantasy;
+  font-size: 30px;
+}
+
+.main-nav {
+  float: right;
+  text-transform: uppercase;
+}
+
+.main-nav a {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3e3e3e;
+}
+
+.main-nav a:last-child {  margin-right: 0; }
+
+.main-nav a:hover {
+  color: #ef96a8;
+}
+
+
+/****************   HEADER   ****************/
+#main-header {
+  clear: both;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.myname { color: #ef96a8; }
+
+#main-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+#main-header h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.header-img {
+  height: 300px;
+  margin: 60px auto 0;
+  border-radius: 15px;
+  background-image: url(../img/header-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 35%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+/****************   ABOUT AND WORK SUMMARY   ****************/
+#about { margin-bottom: 60px; }
+
+.about-me {
+  display: inline-block;
+  width: 47%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.about-me + .about-me {
+  margin-right: 0;
+}
+
+.about-me h2 {
+  text-align: center;
+  font-family: "Kaushan Script", fantasy;
+  font-size: 30px;
+  color: #ef96a8;
+}
+
+.about-me p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+/****************   IMAGE PORTFOLIO   ****************/
+.portfolio-list {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-item {
+  position: relative;
+  float: left;
+  height: 250px;
+  margin-right: 1.78%;
+  margin-right: 1.78%;
+  border-radius: 17px;
+  background-color: #000;
+}
+
+.portfolio-item:nth-child(n+6) {
+  margin-top: 20px;
+}
+
+a .img-disc {
+  color: #3e3e3e;
+}
+
+a .img-disc p,
+a:hover .img-disc p {
+  color: #ef96a8;
+  font-weight: 600;
+}
+
+a:hover .img-disc {
+  background-color: #fafafa;
+}
+
+a:hover img {
+  opacity: .9;
+}
+
+.portfolio-item img {
+  width: 250px;
+  border-radius: 15px;
+
+}
+
+.img-disc {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  top: 176px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.img-disc h3,
+.img-disc p {
+  padding-left: 20px;
+}
+
+.img-disc h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.img-disc p {
+  margin-top: 0;
+}
+
+.thanks {
+  margin-top: 60px;
+  margin-bottom: 0;
+  font-family: "Kaushan Script", fantasy;
+  text-align: center;
+  font-size: 30px;
+  color: #ef96a8;
+}
+
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #3e3e3e;
+}
+
+.wrapper-footer {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Kaushan Script", fantasy;
+  font-size: 30px;
+  color: #ef96a8;
+}
+
+form {
+  float: left;
+  width: 40%;
+}
+
+fieldset {
+  margin: 0 0 15px;
+  padding: 0;
+  border: 0;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Josefin Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+button {
+  border: 0;
+  font-family: "Josefin Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.social-links {
+  display: inline-block;
+  color: #fff;
+  background-color: #ef968a;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.social-links i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
